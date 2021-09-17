@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+/* MENU RESPONSIVE */
+
+header{
+    position: fixed;
+    width: 100%;
+    background: lightblue;
+    height: 50px;
+    z-index: 10;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid white;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+#logo{
+    font-size: 30px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.menu{
+    position: relative;
+    top: 32px;
+    z-index: -1;
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    border-right: 1px solid white;
+}
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+    display: block;
+    padding:20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:2000px) {
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: lightblue;
+        width: 20%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+h1 {
+    display:block;
+    text-align: center;
+}
+
+@media(max-width:892px) {
+    .menu{
+        width: 45%;
+    }
+}
+
+
+
+/* BODY*/
+
+h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+}
+
+.equipos {
+    margin-left: 450px;
+    bottom: 1px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.equipos h2{
+    text-align: left;
+}
+
+footer{
+    font-weight: 600;
+    background-color: #888888;
+    height: 200px;
+    border-top: 4px solid black;
+    opacity: 0.8;
+}
+
+.estadisticas{
+    margin-left: 14px;
+}
+
+#estadisticas{
+    display: inline-block;
+    padding-left: 450px;
+    width: 1089px;
+    height: 450px;
+    max-width: 900px;
+    
+}
+
+.tabla{
+    display: inline-table;
+    padding-top: 20px;
+    padding-left: 45px;
+    width: 430px;
+    height: 320px;
+}
+
+.tabla__dt{
+    position: relative;
+    left: 450px;
+    bottom: 300px;
+    width: 450px;
+    height: 300px;
+}
+
+.jugador{
+    margin-left: 50px;
+    display: inline-block;
+    margin-top:20px;
+}
+
+.dt{
+    display: inline-block;
+    padding-left: 335px;
+}
+
+th, td{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}
+
+h2,h4{
+    text-decoration: underline;
+}
+h4{
+    text-align: left;
+}
+
+.equipos p{
+    max-width: 1000px;
+}
+
+P{
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+/* FOOTER */
+
+.pie{
+    font-size: 13px;
+}
+
+.footer i{
+    color: black;
+    width: 75px;
+    font-size: 30px;
+    max-width: 30px;
+    padding-left: 35px;
+}
+
+.footer{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 100px;
+    max-width: 1750px;
+}
+
+.footer a{
+    padding-left: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.referencias{
+    padding-left: 100px;
+    display: inline-block;
+}
+
+.contacto{
+    display: inline-block;
+    padding-left: 625px;
+}
+
+.insta{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    
+}
+
+
+
+
+/* TRIVIA */
+
+.trivia a{
+    position: relative;
+    left: 450px;
+    top: 30px;
+}
+
+.trivia{
+    display: inline-block;
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    max-width: 900px;
+    box-shadow: 20px 20px 10px 0 grey;
+    background-color: #E8E8E8;
+    margin-left: 470px;
+}
+
+#trivia{
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+#trivia_link{
+    left: 150px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.trivia i{
+    position:relative;
+    left:150px;
+    top: 30px;
+}
+
+h3{
+    display: inline-block;
+    max-width: 900px;
+}
+
+
+
+/* IMAGENES */
+
+img{
+    display: inline-block;
+}
+.imga, .imgb{
+    left: 190px;
+    width: 31%;
+}
+.imgaa{
+    left: 200px;
+    width: 30.6%;
+}
+.imgbb{
+    left: 200px;
+    width: 24.3%;
+}
+.imgs{
+    left: 40px;
+    width: 44.5%;
+}
+.imgss{
+    left: 50px;
+    width: 44.69%;
+}
+.imgm, .imgn, .imgt{
+    left: 40px;
+    width: 45%;
+}
+.imgmm{
+    left: 50px;
+    width: 42%;
+    max-height: 281.5px;
+}
+.videom{
+    max-width: 450px;
+    max-height: 281.5px;
+}
+.imgnn{
+    left: 50px;
+    width: 45%;
+}
+.imgtt{
+    left: 50px;
+    width: 44.5%;
+}
+
+
+
+/* BOTON UP*/
+
+.boton{
+    background-color: lightblue;
+    margin-left: 90%;
+    position: sticky;
+    bottom: 0px;
+    text-align: right;
+    height: 50px;
+    width: 80px;
+}
+#top{
+    position: relative;
+    padding: 6px 28px;
+    color: black;
+    font-size: 35px;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+/* MEDIA */
+
+
+@media (max-width: 1390px){
+    .equipos{
+        margin-left: 150px;
+    }
+    p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    #estadisticas{
+        padding-left: 100px;
+    }
+    .trivia{
+        margin-left: 120px;
+    }
+    .footer a{
+        font-size: 11px;
+    }
+    .contacto{
+        padding-left: 520px;
+    }
+
+}
+
+@media (max-width:1145px){
+    h1{
+        text-align: center;
+        left: 50px;
+
+    }
+    .equipos{
+        margin-left: 60px;
+        max-width: 900px;
+    }
+    .videom{
+        width: 60%;
+    }
+    #estadisticas{
+        padding-left: 50px;
+        max-width: 900px;
+    }
+    .tabla{
+        position: relative;
+        left: 30px;
+        width: 421px;
+        height: 329px;
+    }
+    .jugador{
+        padding-top: 10px;
+    }
+    .tabla__dt{
+        display: inline-table;
+        position: relative;
+        left: 35px;
+        width: 421px;
+        bottom: 0px;
+    }
+    .trivia{
+        max-width: 700px;
+        margin-left: 200px;
+    }
+    #trivia{
+        padding-left: 0px;
+    }
+    .trivia i{
+        position: relative;
+        left: 100px;
+    }
+    #trivia_link{
+        position: relative;
+        left: 100px;
+    }
+    .referencias{
+        padding-left: 0px;
+    }
+    .footer i{
+        padding-left: 30px;
+    }
+    .footer a{
+        padding-left: 0px;
+    }
+    .insta{
+        margin-left: 30px;
+    }
+    .contacto{
+        padding-left: 480px;
+        
+    }
+}
+
+@media (max-width: 970px){
+    #estadisticas{
+        padding-left: 20px;
+        max-width: 582px;
+    }
+    .estadisticas_titulo{
+        padding-left: 40px;
+    }
+    .tabla{
+        position: relative;
+        left: 270px;
+        bottom: 30px;
+        width: 455px;
+    }
+    .jugador{
+        padding-top: 40px;
+        padding-left: 240px;
+    }
+    .dt{
+        position: relative;
+        top: 380px;
+        right: 150px;
+    }
+    .tabla__dt{
+        position: relative;
+        top: 60px;
+        left: 290px;
+        width: 400px;
+        height: 300px;
+    }
+    .trivia{
+        margin-top: 400px;
+        margin-left: 220px;
+        max-width: 600px;
+    }
+    #trivia{
+        position: relative;
+        left: 30px;
+    }
+    #trivia_link{
+        position: relative;
+        left: 10px;
+    }
+    .trivia i{
+        position: relative;
+        left: 10px;
+    }
+
+
+}
+
+@media (max-width: 910px) {
+    .info, .referencias{
+        display: none;
+    }
+    .footer{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .contacto{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .insta{
+        margin-left: 300px;
+        
+    }
+}
+
+@media (max-width: 860px){
+    .tabla{
+        position: relative;
+        left: 180px;
+        right: 100px;
+        font-size: 11px;
+    }
+    .jugador{
+        position: relative;
+        right: 90px;
+        
+    }
+    .dt{
+        position: relative;
+        padding-left: 350px;
+    }
+    .tabla__dt{
+        position: relative;
+        left: 200px;
+        font-size: 11px;
+        width: 435px;
+    }
+    .trivia{
+        margin-left: 150px;
+    }
+    .boton{
+        margin-left: 85%;
+    }
+}
+
+@media (max-width: 800px){
+    .trivia{
+        max-width: 520px;
+        margin-left: 160px;
+        font-size: 14px;
+    }
+    .insta{
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 750px){
+    .videom{
+        height: 185px;
+    }
+    .tabla{
+        position: relative;
+        left: 80px;
+        right: 100px;
+        font-size: 11px;
+    }
+    .jugador{
+        position: relative;
+        right: 170px;
+        
+    }
+    .dt{
+        position: relative;
+        padding-left: 270px;
+    }
+    .tabla__dt{
+        position: relative;
+        left: 120px;
+        font-size: 11px;
+        width: 435px;
+    }
+    .trivia{
+        margin-left: 120px;
+        max-width: 450px;
+        font-size: 11px;
+    }
+    .insta{
+        margin-left: 190px;
+    }
+    .boton{
+        margin-left: 80%;
+    }
+    #estadisticas{
+        max-width: 560px;
+    }
+}
+
+@media (max-width:600px){
+    h1{
+        max-width: 300px;
+        padding-left: 100px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    .equipos{
+        position: relative;
+        max-width: 400px;
+    }
+    .imgs, .imgss, .imgm, .imgmm, .imgt, .imgtt, .imgn, .imgnn{
+        position: relative;
+        left: 0px;
+    }
+    .videom{
+        height: 150px;
+        width: 250px;
+    }
+    #estadisticas{
+        padding-left: 5px;
+        max-width: 302px;
+    }
+    .estadisticas_titulo{
+        padding-left: 20px;
+    }
+    .tabla{
+        position: relative;
+        left: 0px;
+        right: 100px;
+        font-size: 11px;
+    }
+    .jugador{
+        position: relative;
+        right: 265px;
+        
+    }
+    .dt{
+        position: relative;
+        padding-left: 170px;
+    }
+    .tabla__dt{
+        position: relative;
+        left: 20px;
+        font-size: 11px;
+        width: 435px;
+    }
+    
+    .equipos p{
+        font-size: 11px;
+    }
+    .trivia{
+        margin-top: 350px;
+        margin-left: 20px;
+        max-width: 440px;
+        box-shadow: 10px 10px 5px 0 grey;
+    }
+    #trivia{
+        position: relative;
+        left: 30px;
+        font-size: 14px;
+    }
+    #trivia_link{
+        position: relative;
+        left: 15px;
+        font-size: 11px;
+    }
+    .trivia i{
+        position: relative;
+        left: 15px;
+    }
+    .insta{
+        font-size: 20px;
+        margin-left: 150px;
+    }
+    .boton{
+        margin-left: 80%;
+        width: 50px;
+        height: 30px;
+    }
+    #top{
+        font-size: 25px;
+        padding: 3px 18px;
+    }
+}
+
+@media (max-width:500px){
+    .tabla{
+        width: 330px;
+        left: 20px;
+    }
+    .jugador{
+        right: 250px;
+    }
+    .dt{
+        padding-left: 190px;
+    }
+    .tabla__dt{
+        left: 40px;
+        width: 300px;
+    }
+    #trivia{
+        left: 60px;
+    }
+    .trivia{
+        width: 335px;
+        margin-left: 15px;
+    }
+    .trivia i{
+        font-size: 9px;
+        left: 3px;
+    }
+    #trivia_link{
+        left: 1px;
+        font-size: 9px;
+    }
+    .insta{
+        margin-left: 50px;
+    }
+    .equipos{
+        margin-left: 15px;
+    }
+    h1{
+        padding-left: 5px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:400px){
+    .tabla{
+        padding-left: 0px;
+        left: 5px;
+    }
+    .tabla__dt{
+        left: 5px;
+        width: 330px;
+    }
+    .trivia{
+        margin-left: 2px;
+        box-shadow: none;
+        box-shadow: 0px 10px 10px 0 grey;
+    }
+    .equipos{
+        margin-left: 5px;
+    }
+}
